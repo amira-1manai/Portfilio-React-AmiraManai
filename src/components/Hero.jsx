@@ -15,12 +15,12 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white text-[30px]`}>
             Hi, I'm <span className='text-[#915EFF]'>Amira Manai 🌟</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Aspiring Full-Stack Web Developer | MERN Stack | MEAN Stack <span role="img" aria-label="icons">🗄️ 🌐 ⚙️ 🟢</span> <br />
-            DevOps Enthusiast 🚀 | Computer Science Student at ESPRIT 🎓💻 | Lifelong Learner 📚✨
+          <p className={`${styles.heroSubText} mt-2 text-white-100 text-[14px] leading-[1.2]`}>
+            Aspiring Full-Stack Web Developer | 🗄️ 🌐 ⚙️ 🟢 <br />
+             | Computer Science Student at ESPRIT 🎓💻 | Lifelong Learner 📚✨
           </p>
         </div>
       </div>
