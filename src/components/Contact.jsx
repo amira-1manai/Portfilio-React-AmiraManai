@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub } from "react-icons/fa"; // Importing the icons
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -64,16 +65,28 @@ const Contact = () => {
       );
   };
 
+  // Your profile information
+  const profile = {
+    name: "Amira Manai",
+    role: "3D Developer",
+    description: "Passionate about creating immersive experiences through 3D design and development.",
+  };
+
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        {/* Profile Section */}
+        <div className="mt-4 mb-8">
+          <h4 className="text-white font-semibold">{profile.name}</h4>
+          <p className="text-secondary">{profile.role}</p>
+          <p className="text-secondary">{profile.description}</p>
+        </div>
 
         <form
           ref={formRef}
@@ -121,6 +134,25 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        <div className="mt-8 flex justify-between items-center">
+          <a
+            href="https://www.linkedin.com/in/amira-manai-a348ba286/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-white font-medium hover:underline"
+          >
+            <FaLinkedin className="mr-2" /> LinkedIn
+          </a>
+          <a
+            href="https://github.com/amira-1manai" // Replace with your actual GitHub link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-white font-medium hover:underline"
+          >
+            <FaGithub className="mr-2" /> GitHub
+          </a>
+        </div>
       </motion.div>
 
       <motion.div
