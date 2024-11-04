@@ -46,8 +46,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Hi, I’m Amira Manai, a passionate and driven Full Stack Developer specializing in Web and Internet Technologies. I thrive on transforming ideas into innovative solutions that make a real impact. With expertise in programming languages like Java, C, C#, Python, JavaScript, and PHP 🐍, along with strong skills in SQL and NoSQL databases 🗄️, I excel in frameworks such as .NET, Spring Boot, Angular, React, and Node.js 🌐⚙️. I have a proven track record in professional settings, having developed an RDF application for International Consulting Canada 🌍 and conducted data analysis for strategic decisions at Banque STB 📊. I'm eager to bring my technical skills and innovative mindset to a forward-thinking team. If you’re looking for a dedicated developer ready to tackle challenges and drive success, let’s connect! 💼✨
-      </motion.p>
+Hi, I’m Amira Manai, a passionate and driven Full Stack Developer specializing in Web and Internet Technologies. 🌐💻 I thrive on transforming ideas into innovative solutions that make a real impact. 💡✨ I have a proven track record in professional settings and am ready to tackle challenges and drive success. 🚀💪 If you’re looking for a dedicated developer, let’s connect! 💼✨🤝🌟
+
+</motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
